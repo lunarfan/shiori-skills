@@ -1,0 +1,21 @@
+{
+  "novelcheck_skill": 1,
+  "id": "linovelib-tw",
+  "name": "嗶哩輕小說（繁）",
+  "version": "1.0.0",
+  "description": "tw.linovelib.com",
+  "hosts": ["linovelib.com", "bilinovel.com"],
+  "idPattern": "/novel/(\\d+)",
+  "catalogUrl": "https://tw.linovelib.com/novel/{id}/catalog",
+  "searchUrl": "https://cse.google.com/cse?cx=649de34f5e63448cb#gsc.tab=0&gsc.q={query}&gsc.sort=",
+  "headers": { "Accept-Language": "zh-TW,zh;q=0.9" },
+  "info": {
+    "title":   { "selector": "meta[property='og:novel:book_name']", "attr": "content" },
+    "author":  { "selector": "meta[property='og:novel:author']", "attr": "content" },
+    "cover":   { "selector": "meta[property='og:image']", "attr": "content" },
+    "status":  { "selector": "meta[property='og:novel:status']", "attr": "content" },
+    "updated": { "selector": "meta[property='og:novel:update_time']", "attr": "content" }
+  },
+  "volumes": { "selector": ".catalog-volume", "name": ".chapter-bar h3" },
+  "chapters": { "selector": "li.jsChapter a", "url": { "attr": "href" } }
+}

@@ -1,0 +1,21 @@
+{
+  "novelcheck_skill": 2,
+  "id": "sfacg-m",
+  "name": "SF轻小说",
+  "version": "1.0.0",
+  "description": "m.sfacg.com",
+  "hosts": ["sfacg.com"],
+  "idPattern": "/(?:b|i|Novel)/(\\d+)",
+  "catalogUrl": "https://m.sfacg.com/i/{id}/",
+  "infoUrl": "https://m.sfacg.com/b/{id}/",
+  "searchUrl": "https://m.sfacg.com/search.html?keyword={query}",
+  "info": {
+    "title":   ".book_info .book_newtitle",
+    "author":  { "selector": ".book_info .book_info3", "regex": "^(.+?)\\s*/" },
+    "cover":   { "selector": ".book_info img", "attr": "src" },
+    "status":  { "selector": ".book_info .book_info2", "regex": "(连载中|已完结)" },
+    "updated": { "selector": ".book_info .book_info3", "regex": "(\\d{2}-\\d{2}-\\d{2} \\d{2}:\\d{2})" }
+  },
+  "volumes":  { "header": "div.mulu" },
+  "chapters": { "selector": "ul.mulu_list a", "url": { "attr": "href" } }
+}

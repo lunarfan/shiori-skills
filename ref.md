@@ -1,0 +1,3 @@
+- 首頁: https://tw.linovelib.com/novel
+- 目錄範例: https://tw.linovelib.com/novel/2958/catalog
+- 搜尋範例: https://cse.google.com/cse?cx=649de34f5e63448cb#gsc.tab=0&gsc.q=%E6%9E%9C%E7%84%B6&gsc.sort=
