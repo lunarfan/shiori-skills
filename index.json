@@ -1,0 +1,28 @@
+{
+  "shiori_skills_index": 1,
+  "skills": [
+    {
+      "id": "linovelib-tw",
+      "name": "嗶哩輕小說（繁）",
+      "version": "1.0.0",
+      "description": "tw.linovelib.com",
+      "hosts": [
+        "linovelib.com",
+        "bilinovel.com"
+      ],
+      "format": 1,
+      "file": "linovelib-tw.json"
+    },
+    {
+      "id": "sfacg-m",
+      "name": "SF轻小说",
+      "version": "1.0.0",
+      "description": "m.sfacg.com",
+      "hosts": [
+        "sfacg.com"
+      ],
+      "format": 2,
+      "file": "sfacg.json"
+    }
+  ]
+}
