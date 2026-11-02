@@ -8,6 +8,7 @@ imported from this repo (from a URL, a file, or pasted JSON).
 |---|---|---|
 | `linovelib-tw.json` | 嗶哩輕小說（繁） | 1 |
 | `sfacg.json` | SF轻小说 (mobile site) | 1 |
+| `8novel.json` | 無限輕小說 | 1 |
 
 `ref.md` holds reference URLs used when writing the linovelib skill.
 

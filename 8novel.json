@@ -1,0 +1,22 @@
+{
+  "novelcheck_skill": 1,
+  "id": "8novel",
+  "name": "無限輕小說",
+  "version": "1.0.0",
+  "description": "www.8novel.com",
+  "hosts": ["8novel.com"],
+  "idPattern": "/(?:novelbooks|read)/(\\d+)",
+  "catalogUrl": "https://www.8novel.com/novelbooks/{id}/",
+  "searchUrl": "https://www.8novel.com/search/?key={query}",
+  "headers": { "Accept-Language": "zh-TW,zh;q=0.9" },
+  "info": {
+    "title":   { "selector": "meta[property='og:novel:book_name']", "attr": "content" },
+    "author":  { "selector": "meta[property='og:novel:author']", "attr": "content" },
+    "cover":   { "selector": "meta[property='og:image']", "attr": "content" },
+    "status":  ".item-info-status",
+    "updated": { "selector": "meta[property='og:novel:update_time']", "attr": "content" }
+  },
+  "volumes": { "selector": "#chapters .folder", "name": { "selector": ".vol-title h3", "regex": "^\\s*(.+?)\\s*/" } },
+  "chapters": { "selector": "a.episode_li", "url": { "attr": "href" } },
+  "reader": { "content": "#text" }
+}

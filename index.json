@@ -2,6 +2,17 @@
   "shiori_skills_index": 1,
   "skills": [
     {
+      "id": "8novel",
+      "name": "無限輕小說",
+      "version": "1.0.0",
+      "description": "www.8novel.com",
+      "hosts": [
+        "8novel.com"
+      ],
+      "format": 1,
+      "file": "8novel.json"
+    },
+    {
       "id": "linovelib-tw",
       "name": "嗶哩輕小說（繁）",
       "version": "1.0.0",
