@@ -21,7 +21,7 @@
       "hosts": [
         "sfacg.com"
       ],
-      "format": 2,
+      "format": 1,
       "file": "sfacg.json"
     }
   ]
